@@ -17,7 +17,7 @@ abstract class DunkinEmployee implements TimeTracker {
         this.role = role;
     }
 
-    @Override
+    
     public void showDashboard() {
         LocalTime clockIn = LocalTime.of(17, 0);          
         LocalTime breakStart = LocalTime.of(20, 30);      
@@ -47,7 +47,6 @@ abstract class DunkinEmployee implements TimeTracker {
 
 class CrewMember extends DunkinEmployee {
     public CrewMember(String name) { super(name, "Crew Member"); }
-    @Override
     public void performDuty() {
         System.out.println(" WORK LOG      : Prepped donuts & served coffee.");
     }
@@ -55,7 +54,6 @@ class CrewMember extends DunkinEmployee {
 
 class Manager extends DunkinEmployee {
     public Manager(String name) { super(name, "Store Manager"); }
-    @Override
     public void performDuty() {
         System.out.println(" WORK LOG      : Managed staff & closed registers.");
     }
