@@ -63,8 +63,8 @@ class DunkinApp {
     public static void main(String[] args) {
         List<DunkinEmployee> staff = new ArrayList<>();
         
-        staff.add(new CrewMember("Akash"));
-        staff.add(new Manager("Siya"));
+        staff.add(new CrewMember("Roy Akash"));
+        staff.add(new Manager("Roy Siya"));
 
         for (DunkinEmployee emp : staff) {
             emp.showDashboard();
